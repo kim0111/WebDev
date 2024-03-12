@@ -1,0 +1,11 @@
+<p><em>album-detail works!</em></p>
+
+<p>Title: {{album.title}}</p>
+
+<input type="text" placeholder="{{album.title}}" [(ngModel)]="title">
+<button (click)="saveTitle()">Save</button>
+<br>
+<br>
+<a routerLink="photos">Photo</a>
+<br>
+<a [routerLink]="['../']">Back to page</a>
